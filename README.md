@@ -36,20 +36,45 @@ Figure 02  Encoder 8 * 3
 
 **Procedure**
 
-/* write all the steps invloved */
+1.Type the program in Quartus software.
+
+2.Compile and run the program.
+
+3.Generate the RTL schematic and save the logic diagram.
+
+4.Create nodes for inputs and outputs to generate the timing diagram.
+
+5.For different input combinations generate the timing diagram.
+
 
 **PROGRAM**
 
 /* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
-
-Developed by: RegisterNumber:
+```
+module encoder83 (a0,a1,a2,d0,d1,d2,d3,d4,d5,d6,d7);
+input d0,d1,d2,d3,d4,d5,d6,d7;
+output a0,a1,a2;
+assign a0 = d1|d3|d5|d7;
+assign a1 = d2|d3|d6|d7;
+assign a2 = d4|d5|d6|d7;
+endmodule
+```
+Developed by:HARINARAYANAN A
+RegisterNumber:25017317
 */
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
 
+<img width="863" height="753" alt="image" src="https://github.com/user-attachments/assets/d2741631-383c-436b-9fe8-d9e0eadd5a64" />
+
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
 
+<img width="1310" height="489" alt="image" src="https://github.com/user-attachments/assets/e5b7c1a1-c2a0-4590-939b-5532a6a82c02" />
+
+
 **RESULTS**
+
+Implementing Encoder 8 To 3 in Dataflow Modelling using verilog and validating their functionality using their functional tables executed successfully
 
 
 
